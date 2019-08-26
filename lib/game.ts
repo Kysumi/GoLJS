@@ -2,9 +2,9 @@ import * as PIXI from 'pixi.js'
 import pixiLogoUrl from './pixijs-logo.url'
 
 export default class Game {
-  private _app : P.Application
+  private _app : PIXI.Application
 
-  constructor(app : P.Application) {
+  constructor(app : PIXI.Application) {
     this._app = app
   }
 

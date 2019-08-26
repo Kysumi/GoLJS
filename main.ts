@@ -5,15 +5,17 @@ window.addEventListener('DOMContentLoaded', initGame)
 
 function removeExistingGame() : void {
   const els = document.body.children
-  if (els.length > 0) document.body.removeChild(els.item(0) as Node)
+  if (els.length > 0) {
+    document.body.removeChild(els.item(0) as Node)
+  } 
 }
 
 function init() : P.Application {
   removeExistingGame()
   const app = new P.Application(
-      window.outerWidth
-    , window.outerHeight
-    , { backgroundColor: 0x1099bb }
+      window.outerWidth,
+      window.outerHeight,
+      { backgroundColor: 0x1099bb }
   )
   document.body.appendChild(app.view)
   return app

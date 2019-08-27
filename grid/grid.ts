@@ -1,6 +1,6 @@
 import * as PIXI from "pixi.js";
 import Box from "./box";
-
+import Vector from "../lib/vector";
 
 export default class Grid {
     protected _app: PIXI.Application;
@@ -20,15 +20,14 @@ export default class Grid {
     /**
      * Default the grid to a new set of boxes
      */
-    protected initGrid() {
+    public initGrid() {
 
         for (var x = 0; x < this.sizeX; x++) {
             for (var y = 0; y < this.sizeY; ++y) {
-                this.grid[x][y] = new Box(this._app, this.tileSize, this.tileSize);
+                this.grid[x] = [];
+                this.grid[x][y] = new Box(this._app, new Vector(this.tileSize, this.tileSize), new Vector(x,y));
             }    
         }
-
-        this.grid.push();
     }
 
     setPadding(amount: number): Grid {

@@ -27,12 +27,7 @@ export default class Game {
   }
 
   start(): void {
-    this._grid = new Grid(this._app, 32,32);
-
-    // const loader = PIXI.Loader.shared;
-
-    // loader.add('person', '/assets/images/img_person_0.png').load(this.temp());
-
-    // this.temp();
+    this._grid = new Grid(this._app, 10,10);
+    this._grid.initGrid();
   }
 }

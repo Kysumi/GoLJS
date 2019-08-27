@@ -1,6 +1,6 @@
 import * as PIXI from "pixi.js";
 import pixiLogoUrl from "./pixijs-logo.url";
-import Grid from "../grid/grid"
+import Grid from "../grid/grid";
 
 export default class Game {
   private _app: PIXI.Application;
@@ -9,7 +9,7 @@ export default class Game {
   constructor(app: PIXI.Application) {
     this._app = app;
 
-    this._grid = new Grid(this._app, 10,10);
+    this._grid = new Grid(this._app, 10, 10);
     this._grid.initGrid();
   }
 

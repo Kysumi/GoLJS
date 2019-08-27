@@ -1,7 +1,7 @@
 import Vector from "../lib/vector";
 import GameObject from "./gameObject";
 
-export default class GridBase extends GameObject {
+export default class GridObject extends GameObject {
     private gridPosition: Vector;
     private tileSize: Vector;
 	private tilePadding: number = 0;

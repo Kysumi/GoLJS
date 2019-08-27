@@ -22,7 +22,6 @@ function init(): PIXI.Application {
 function initGame(): void {
   const app = init();
   const game = new Game(app);
-  game.start();
 }
 
 // @ts-ignore

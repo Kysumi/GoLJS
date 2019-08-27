@@ -1,8 +1,8 @@
 import * as PIXI from "pixi.js";
 import Vector from "../lib/vector";
-import GridBase from "../base/gridBase";
+import GridObject from "../base/gridObject";
 
-export default class Box extends GridBase {
+export default class Box extends GridObject {
 	protected _app: PIXI.Application;
 
 	constructor(app: PIXI.Application, tileSize: Vector, gridPos: Vector) {

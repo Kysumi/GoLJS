@@ -8,6 +8,9 @@ export default class Game {
 
   constructor(app: PIXI.Application) {
     this._app = app;
+
+    this._grid = new Grid(this._app, 10,10);
+    this._grid.initGrid();
   }
 
   temp(): void {
@@ -24,10 +27,5 @@ export default class Game {
       logo.skew.x += 0.01 * delta;
       logo.skew.y += 0.01 * delta;
     });
-  }
-
-  start(): void {
-    this._grid = new Grid(this._app, 10,10);
-    this._grid.initGrid();
   }
 }

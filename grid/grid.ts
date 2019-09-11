@@ -33,13 +33,13 @@ export default class Grid {
     }
   }
 
-  setPadding(amount: number): Grid {
+  public setPadding(amount: number): Grid {
     this.padding = amount;
 
     return this;
   }
 
-  setTileSize(size: number): Grid {
+  public setTileSize(size: number): Grid {
     this.tileSize = size;
 
     return this;

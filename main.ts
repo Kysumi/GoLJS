@@ -12,7 +12,7 @@ function removeExistingGame(): void {
 
 function init(): PIXI.Application {
   removeExistingGame();
-  const app = new PIXI.Application(window.outerWidth, window.outerHeight, {
+  const app = new PIXI.Application(100, 100, {
     backgroundColor: 0x1099bb
   });
   document.body.appendChild(app.view);
